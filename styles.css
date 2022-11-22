@@ -1,7 +1,8 @@
 :root {
     --colorBlack: #323638;
     --colorGrey: #949ba0;
-    --colorDarkGrey: #535a5e;
+    --colorDarkGrey1: #535a5e;
+    --colorDarkGrey2: #475055;
     --colorlightGrey: #9dacb2;
     --colorGreyBlue: #a0b9bf;
     --colorBlueGrey: #a5ccd1;
@@ -18,6 +19,7 @@
     padding: 0;
     font-family:  'Noto Sans', sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -71,22 +73,33 @@
 
 
 .home {
-    background-color: var(--colorDarkGrey);
+    background: var(--colorDarkGrey1);
+    background: -webkit-linear-gradient(to right ,var(--colorDarkGrey1), var(--colorDarkGrey2));
+    background: linear-gradient(to right ,var(--colorDarkGrey1), var(--colorDarkGrey2));
     color: var(--colorWhite);
+    height: 1000px;
 }
 
 .about {
-    background-color: var(--colorDarkGrey);
+    background: var(--colorDarkGrey1);
+    background: -webkit-linear-gradient(to left ,var(--colorDarkGrey1), var(--colorDarkGrey2));
+    background: linear-gradient(to left ,var(--colorDarkGrey1), var(--colorDarkGrey2));
     color: var(--colorWhite);
+    height: 1000px;
 }
 
 .blog {
-    background-color: var(--colorDarkGrey);
+    background: var(--colorDarkGrey1);
+    background: -webkit-linear-gradient(to right ,var(--colorDarkGrey1), var(--colorDarkGrey2));
+    background: linear-gradient(to right ,var(--colorDarkGrey1), var(--colorDarkGrey2));
     color: var(--colorWhite);
+    height: 1000px;
 }
 
 .projects {
-    background-color: var(--colorDarkGrey);
+    background: var(--colorDarkGrey1);
+    background: -webkit-linear-gradient(to left ,var(--colorDarkGrey1), var(--colorDarkGrey2));
+    background: linear-gradient(to left ,var(--colorDarkGrey1), var(--colorDarkGrey2));
     color: var(--colorWhite);
-    height: 20000px;
+    height: 1000px;
 }
