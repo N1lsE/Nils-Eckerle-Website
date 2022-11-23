@@ -1,9 +1,3 @@
-// smothe scrolling in safari
-import smoothscroll from 'smoothscroll-polyfill';
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-
 // navbar toggle code was coppied from https://www.youtube.com/watch?v=3-2Pj5hxwrw
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbarMenu");
