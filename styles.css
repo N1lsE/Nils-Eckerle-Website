@@ -1,5 +1,6 @@
 :root {
     --colorBlack: #323638;
+    --colorLightBlack: #3b3f41;
     --colorGrey: #949ba0;
     --colorDarkGrey1: #535a5e;
     --colorDarkGrey2: #475055;
@@ -12,7 +13,7 @@
 
     --colorLogo:#44b8c7;
 
-    --standartborderRadius: 4px;
+    --standartborderRadius: 8px;
 }
 
 * {
@@ -193,14 +194,17 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    background: var(--colorLightBlack);
 }
 
 .qna__container {
-    margin: 0 20px;
-    padding: 10px;    
+    margin: 30px 30px;
+    padding: 10px 40px;    
     width: 100%;
-    max-width: 1300px;
+    max-width: 700px;
     justify-content: center;
+    background-color: var(--colorDarkGrey1);
+    border-radius: var(--standartborderRadius);
 }
 
 .qna__h1 {
