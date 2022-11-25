@@ -288,7 +288,6 @@
 .about__section-wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
-
 }
 
 .about__picture {
@@ -298,9 +297,24 @@
     grid-row: 1 / 10;
 }
 
-.about__text {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.about__text-question {
+    justify-content: right;
+    text-align: right;
+    margin: 0 10px;
+    font-weight: 600;
+    width: 200px;
 }
+
+.about__text-awnser {
+    justify-content: left;
+    text-align: left;
+    margin: 0 10px;
+    min-width: 100px;
+}
+
+.about__text-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+
