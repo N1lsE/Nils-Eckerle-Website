@@ -269,3 +269,38 @@
 		grid-row: 1 / 3;
     }
 }
+
+/* About Section */
+.main__container {
+    background-color: var(--colorLightBlack);
+}
+
+.about__container {
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: var(--standartborderRadius);
+    background-color: var(--colorDarkGrey1);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.about__section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.about__picture {
+    background-color: #555a62;
+    margin-right: 20px;
+    grid-column: 1;
+    grid-row: 1 / 10;
+}
+
+.about__text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
