@@ -3,7 +3,7 @@
     --colorLightBlack: #3b3f41;
     --colorGrey: #949ba0;
     --colorDarkGrey1: #464b4e;
-    --colorDarkGrey2: #475055;
+    --colorDarkGrey2: #5f686d;
     --colorlightGrey: #9dacb2;
     --colorlightGrey2: #a7b6bb;
     --colorGreyBlue: #a0b9bf;
@@ -197,7 +197,7 @@ body {
     border-radius: var(--standartborderRadius);
 }
 
-.main__container h1 {
+.main__container__h1  {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -251,7 +251,7 @@ body {
 
 @media  screen and (min-width: 913px) {
     .qna__container {
-        max-width: 100%;
+        max-width: 1300px;
         /* background-color: var(--colorLightBlack); */
     }
 
@@ -400,4 +400,106 @@ body {
 		width: 0px;
 		opacity: 0%;
 	}
+}
+
+
+/* blog section */
+
+#blog {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--colorWhite);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 30px 10px;
+	padding: 10px 40px; 
+	justify-content: center;
+	align-items: center;
+}
+
+.blog__container{
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--colorWhite);
+}
+
+.blog__container {
+	text-align: left;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+	max-width: 1300px;
+}
+
+.blog__h1 {
+	width: 100%;
+	text-align: left;
+	justify-content: left;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	padding-left: 3rem;
+	color: var(--colorGrey);
+}
+
+.blog__last-blog-post {
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--standartborderRadius);
+	background-color: var(--colorBlack);
+	padding: 30px;
+}
+
+.blog__last-blog-post__text {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	padding-left: 2rem;
+}
+
+.blog__last-blog-post__img {
+	grid-column: 1 / auto;
+	grid-row: 1 / 10;
+	width: 100%;
+	padding-right: 20px;
+	border-radius: var(--standartborderRadius);
+}
+
+.blog__last-blog-post__h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	padding-left: 0;
+}
+
+.blog__to-blog-btn {
+	display: flex;
+	width: 100%;
+	justify-content: left;
+	align-items: left;
+	padding-left: 20px;
+}
+
+.blog__to-blog-btn button {
+	margin-top: 2rem;
+	padding: 5px 15px;
+	font-size: 01.5rem;
+	font-weight: 400;
+	color: var(--colorlightGrey);
+	background-color: var(--colorDarkGrey1);
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	
+	transition: all 0.2s ease;
+}
+
+.blog__to-blog-btn button:hover {
+	color: var(--colorWhite);
+	background-color: var(--colorDarkGrey2);
+	transition: all 0.2s ease;
 }

@@ -12,7 +12,6 @@
     <!-- end of fonts -->
     <link rel="stylesheet" href="styles.css">
     <!-- please replace the `latest` with specific version -->
-    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.2.0/lib/bundle.min.cjs"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -43,7 +42,7 @@
 
     <div class="main__container" id="home">
         <div class="qna__container">
-            <h1 class="qna__h1">Q&A</h1>
+            <h1 class="main__container__h1">Q&A</h1>
             <div class="qna__items">
                 <div class="qna__item">
                     <p class="qna__question">Wozu ist die Seite?</p>
@@ -86,7 +85,7 @@
 
     <div class="main__container" id="about">
         <div class="about__container">
-            <h1 class="about__headline">Über mich</h1>
+            <h1 class="main__container__h1">Über mich</h1>
             <div class="about__section-wrapper">
                 <div class="about__picture"><img src="img/Flower.jpg" alt="Profilbild Nils Eckerle" id="about__img"></div>
                 <div class="about__text-wrapper">
@@ -112,12 +111,28 @@
     </div>
 
     <div class="main__container" id="blog">
-        <h1>blog</h1>
+		<h1 class="main__container__h1">Blog</h1>
+        <div class="blog__container">
+			<h1 class="blog__h1">Letzter Blogeintrag</h1>
+			<div class="blog__last-blog-post">
+				<h1 class="blog__last-blog-post__h1">placeholder blogpost headline</h1>
+				<div class="blog__last-blog-post__text">
+					<img src="img/Flower.jpg" alt="" class="blog__last-blog-post__img">
+					<p class="blog__last-blog-post__summery">placeholder blogpost summery, Aenean non mi finibus felis placerat scelerisque maximus vitae quam. Ut auctor mollis ullamcorper. In faucibus enim non velit venenatis tristique. Maecenas iaculis venenatis risus a volutpat. Duis bibendum sapien dolor, fringilla hendrerit diam lacinia et. Pellentesque gravida libero vel odio volutpat, sit amet iaculis nisi ullamcorper. Vivamus sollicitudin dolor id leo lacinia, id porta ipsum convallis. Vestibulum elementum libero dui. Nullam id purus ante.  </p>
+					<p class="blog__last-blog-post__author">placeholder blogpost author</p>
+					<a href="/" class="blog__last-blog-post__ling-to-blagpost">placeholder link to blogpost</a>
+				</div>
+			</div>
+			<div class="blog__to-blog-btn">
+				<button>Zum Blog</button>
+			</div>
+		</div>
     </div>
 
     <div class="main__container" id="projects">
-        <h1>projects</h1>
+        <h1 class="main__container__h1">projects</h1>
     </div>
-    <script src="app.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/index-blog.js"></script>
 </body>
 </html>
